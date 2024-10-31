@@ -1,4 +1,4 @@
 # Pokedex-app
 A pokemon search app built using pokeapi.co
 
-#[Live preview](https://snorlax-pokedex.netlify.app)
+[##Live preview](https://snorlax-pokedex.netlify.app)
