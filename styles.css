@@ -1,0 +1,201 @@
+html, body {
+  font-size: 62.5%;
+  font-family: Poppins;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+}
+
+#logo {
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translate(-50%);
+  height: 7rem;
+  width: 20rem;
+}
+
+#search-form {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+}
+
+#search-input {
+  height: 2.5rem;
+  border: solid 1px black;
+  border-radius: 7px 0 0 7px;
+  width: 60vw;
+  max-width: 350px;
+  padding-left: .65rem;
+  transition-duration: .2s;
+}
+
+#search-input:focus {
+  outline: none;
+  transform: scale(1.01);
+}
+
+#search-btn {
+  background-color: red;
+  color: white;
+  border: solid 1px black;
+  border-left: 0;
+  border-radius: 0 7px 7px 0;
+  width: 20vw;
+  max-width: 70px;  
+  min-width: 40px;
+  cursor: pointer;
+  transition-duration: .2s;
+}
+
+#search-btn:hover {
+  background-color: #edeade;
+  color: black;
+}
+
+#home {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#home > h1 {
+  width: 60vw;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  line-height: 2.5rem;
+}
+
+#home > img {
+  margin-top: 2rem;
+  border: none;
+  border-radius: 1.5rem;
+  height: 40%;
+  width: 60%;
+  object-fit: cover;
+  max-width: 400px;
+  max-height: 400px;
+}
+
+#card {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%);
+  display: none;
+  background-color: #363636;
+  text-align: center;
+  color: white;
+  border: none;
+  border-radius: 1.5rem;
+  margin-top: 2rem;
+  height: auto;
+  width: 60vw;
+  max-width: 400px;
+  min-width: 250px;
+  margin-top: 5rem;
+}
+
+#card img {
+  margin-top: 1.5rem;
+  width: 50%;
+  object-fit: cover;
+  image-rendering: pixelated;
+  cursor: pointer;
+  transition-duration: .25s;
+}
+
+#card img:hover {
+  transform: scale(1.2);
+}
+
+#pokemon-name {
+  font-size: 3rem;
+  text-transform: capitalize;
+  font-family: "Pixelify Sans";
+}
+
+#pokemon-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  align-items: flex-start;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  padding-bottom: 2rem;
+}
+
+#pokemon-info > p {
+  margin: .5rem;
+}
+
+#error-screen {
+  display: none;
+  margin-top: 10rem;
+  height: 70vh;
+  width: 80vw;
+  text-align: center;
+}
+
+#error-screen > img {
+  margin-top: 2rem;
+  border: none;
+  border-radius: 1.5rem;
+  height: 65%;
+  width: 80%;
+  object-fit: cover;
+  max-width: 500px;
+}
+
+#error-screen > h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  line-height: 4rem;
+}
+
+#error-screen > p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: .2rem;
+  line-height: 2.5rem;
+}
+
+#github img{
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    cursor: pointer;
+    transition-duration: 0.1s;
+}
+
+#github img:hover{
+    transform: scale(1.025);
+}
+
+
+@media (max-width: 575px) {
+  #pokemon-info {
+    font-size: 1.2rem;
+  }
+}
+
